@@ -56,17 +56,23 @@ A mobile application that combines music discovery with social interaction. User
     cd backend
     npm install
   Install frontend dependencies
-    cd ../music-chat-app
+    cd frontend
     npm install
-3. Set up environment variables
+   
+4. Set up environment variables
+   
   Backend (.env):
     PORT=5000
     MONGODB_URI=your_mongodb_uri
     JWT_SECRET=your_jwt_secret
+    LASTFM_API_KEY=last_fm_api_key
+    LASTFM_API_SECRET=lastfm_api_secret
     SPOTIFY_CLIENT_ID=your_spotify_client_id
     SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
+   
   Frontend (.env): 
     EXPO_PUBLIC_API_URL=http://your_backend_url:5000
+    EXPO_PUBLIC_LASTFM_API_KEY=last_fm_api_key
 
 **Start backend server**
 cd backend
@@ -87,3 +93,5 @@ npm start
    - "recommend genre:rock"
    - "search Bohemian Rhapsody"
    - "recommend similar to Artist - Track"
+   - top artists
+   - top tracks
